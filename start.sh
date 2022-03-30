@@ -59,6 +59,8 @@ ASTERISK_VERSION=15.3.0\
       strip "${filename}" ; \
     done \
   && make install \
+  && make samples \
+  && make config \
   && cd .. \
   && apk del .build-deps \
   && rm -rf ./asterisk* \
