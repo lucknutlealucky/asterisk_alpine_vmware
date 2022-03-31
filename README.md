@@ -11,3 +11,6 @@ and run isntalation script using "./start.sh"
 if instalation success you will be able to run "asterisk -rvvvvv" command and try connect using sip client
 
 you only need 256MB of RAM :)
+
+
+repo by ilham & gerda :))
