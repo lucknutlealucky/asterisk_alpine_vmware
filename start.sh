@@ -28,7 +28,7 @@ ASTERISK_VERSION=15.3.0\
   && sed -i -e 's/ASTSSL_LIBS:=$(OPENSSL_LIB)/ASTSSL_LIBS:=-Wl,--no-as-needed $(OPENSSL_LIB) -Wl,--as-needed/g' main/Makefile \
   && patch -p1 < ../musl-mutex-init.patch \
   && cp ../9000-libressl.patch third-party/pjproject/patches/ \
-  && ./configure --with-pjproject-bundled \
+  && ./configure --with-pjproject-bundled --libdir=/usr/lib64 --prefix=/ \
   && make menuselect.makeopts \
   && ./menuselect/menuselect \
     --disable BUILD_NATIVE \
