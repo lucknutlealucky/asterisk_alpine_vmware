@@ -66,3 +66,4 @@ ASTERISK_VERSION=15.3.0\
   && rm -rf ./asterisk* \
   && rm -rf src \
   && rm -rf /var/cache/apk/*
+  && asterisk -&
