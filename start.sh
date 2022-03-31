@@ -68,7 +68,7 @@ ASTERISK_VERSION=15.3.0\
   && rm -rf /var/cache/apk/* \
   && rm -r /etc/asterisk/sip.conf \
   && rm -r /etc/asterisk/extensions.conf \
-  && cp sip.conf /etc/asterisk/sip.conf \
-  && cp extensions.conf /etc/asterisk/extensions.conf \
+  && cp /home/asterisk_alpine_vmware/sip.conf /etc/asterisk/sip.conf \
+  && cp /home/asterisk_alpine_vmware/extensions.conf /etc/asterisk/extensions.conf \
   
     asterisk -&
