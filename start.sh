@@ -15,9 +15,9 @@ ASTERISK_VERSION=15.3.0\
     57E769BC37906C091E7F641F6CB44E557BD982D8 \
     CDBEE4CC699E200EB4D46BB79E76E3A42341CE04 \
   ; do \
-    gpg --keyserver pgp.mit.edu --recv-keys "$key" || \
-    gpg --keyserver keyserver.pgp.com --recv-keys "$key" || \
-    gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ; \
+    gpg --keyserver pgp.mit.edu:80 --recv-keys "$key" || \
+    gpg --keyserver keyserver.ubuntu.com --recv-keys "$key" || \
+    gpg --keyserver p80.pool.sks-keyservers.net:80 --recv-keys "$key" ; \
   done \
   && wget http://downloads.asterisk.org/pub/telephony/asterisk/releases/asterisk-${ASTERISK_VERSION}.tar.gz \
   && wget http://downloads.asterisk.org/pub/telephony/asterisk/releases/asterisk-${ASTERISK_VERSION}.tar.gz.asc \
