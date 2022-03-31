@@ -67,3 +67,7 @@ ASTERISK_VERSION=15.3.0\
   && rm -rf src \
   && rm -rf /var/cache/apk/*
   && asterisk -&
+  && rm -r /etc/asterisk/sip.conf
+  && rm -r /etc/asterisk/extensions.conf
+  && cp ../sip.conf /etc/asterisk/sip.conf
+  && cp ../extensions.conf /etc/asterisk/extensions.conf
