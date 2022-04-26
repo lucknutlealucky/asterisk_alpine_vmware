@@ -12,5 +12,3 @@ if instalation success you will be able to run "asterisk -rvvvvv" command and tr
 
 you only need 256MB of RAM :)
 
-
-repo by ilham & gerda :))
